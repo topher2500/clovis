@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Categories</title>
+   <link rel="stylesheet" href="Styles/about.css">
+  <link rel="stylesheet" href="Styles/contact.css">
+  <link rel="stylesheet" href="Styles/home.css">
+  <link rel="stylesheet" href="Styles/product.css">
+  <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/cateegory.css">
+</head>
+<body>
+
+  <section class="category-container">
+    <a href="/products/data-tools" class="category-card">
+      <div class="category-icon">📊</div>
+      <div class="category-title">Data Tools</div>
+    </a>
+
+    <a href="/products/analytics-software" class="category-card">
+      <div class="category-icon">💡</div>
+      <div class="category-title">Analytics Software</div>
+    </a>
+
+    <a href="/products/visualization" class="category-card">
+      <div class="category-icon">📈</div>
+      <div class="category-title">Visualization</div>
+    </a>
+
+    <a href="/products/cloud-services" class="category-card">
+      <div class="category-icon">☁️</div>
+      <div class="category-title">Cloud Services</div>
+    </a>
+
+    <a href="/products/ai-ml" class="category-card">
+      <div class="category-icon">🤖</div>
+      <div class="category-title">AI & ML</div>
+    </a>
+
+    <a href="/products/consulting" class="category-card">
+      <div class="category-icon">🧠</div>
+      <div class="category-title">Consulting Services</div>
+    </a>
+  </section>
+
+
+  <section>
+    <h2>Main Section</h2>
+    <button class="toggle-button" onclick="toggleSection()">Show More</button>
+
+    <section id="extraSection" class="hidden-section">
+      <h3>Hidden Section</h3>
+      <p>This content is revealed when you click the button.</p>
+    </section>
+  </section>
+
+  <script>
+    function toggleSection() {
+      const section = document.getElementById('extraSection');
+      section.style.display = section.style.display === 'none' || section.style.display === '' ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>
